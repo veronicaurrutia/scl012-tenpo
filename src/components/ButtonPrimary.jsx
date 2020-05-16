@@ -3,19 +3,17 @@ import PropTypes from 'prop-types'
 import '../assets/css/button.css'
 
 
-const Button = ({title, onClick}) => {
+const ButtonPrimary = ({title, onClick}) => {
     return (
-        <button 
-            className = 'button'
-            onClick = {onClick}>
-            {title}
+        <button className = 'button' onClick = {onClick}>
+        {title}
         </button>
     )
 }
 
-Button.propTypes = {
+ButtonPrimary.propTypes = {
     title: PropTypes.string.isRequired,
     onClick: PropTypes.func
 }
 
-export default Button;
+export default ButtonPrimary;

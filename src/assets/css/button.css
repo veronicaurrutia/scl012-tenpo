@@ -1,5 +1,13 @@
-.button{
-    background-color: #00baa3;
-    width: 100px;
-    
+.button{ 
+    width: 312px;
+    height: 56px;
+    background: #00BAA4 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    font: Bold 14px/17px Gotham;
+    letter-spacing: 0.7px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 5px;
 }
