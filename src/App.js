@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button.jsx';
+import Welcome from './components/Welcome.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <Button 
-      title='Crear una cuenta'
-      />
-    </div>
+    <>
+      <Welcome />
+    </>
   );
 }
 
