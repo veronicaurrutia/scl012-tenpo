@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Welcome from './components/Welcome.jsx'
+import BasicTextFields from './components/Verification';
 
 function App() {
   return (
     <>
-      <Welcome />
+      <BasicTextFields />
     </>
   );
 }
