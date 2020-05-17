@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Welcome from './components/Welcome.jsx';
+import Data from './components/Data';
 import Registry from './components/Registry.jsx';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -13,6 +14,9 @@ function App() {
           </Route>
           <Route path="/registrarse">
             <Registry />
+          </Route>
+          <Route path="/data">
+            <Data />
           </Route>
         </Switch>  
     </Router>
