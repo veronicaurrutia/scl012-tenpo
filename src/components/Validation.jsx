@@ -22,13 +22,13 @@ export default function ValidationTextFields() {
       <div><h1 className='text-Valida'>Te hemos enviado un mensaje</h1></div>
        
         <TextField
-          error
-          id="Password"
-          onInput="Password"
+          Password
+          id="Number-Password"
           label="Codigo"
-          defaultValue="Number"
-          
-        /><br/>
+        //   defaultValue="Hello World"
+         
+          />
+        <br/>
          <ButtonPrimary title='Crear Usuario'/>
       </div>
     </form>
