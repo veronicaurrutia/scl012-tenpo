@@ -1,0 +1,26 @@
+.container-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.code-tittle{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.code-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.button{
+    margin-top: 30px;
+}
