@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 // import Welcome from './components/Welcome.jsx'
-import Validation from './components/Validation'
+import Data from './components/Data'
 
 function App() {
   return (
     <>
-      <Validation />
+      <Data />
     </>
   );
 }

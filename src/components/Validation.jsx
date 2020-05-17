@@ -29,7 +29,7 @@ export default function ValidationTextFields() {
          
           />
         <br/>
-         <ButtonPrimary title='Crear Usuario'/>
+         <ButtonPrimary title='Continuar'/>
       </div>
     </form>
   );
