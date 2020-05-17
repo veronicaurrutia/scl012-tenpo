@@ -46,7 +46,7 @@ export default function BasicTextFields() {
           <TextField
           id="standard-select-currency-native"
           select
-          label="Native select"
+          label="Comuna"
           value={currency}
           onChange={handleChange}
           SelectProps={{
@@ -60,7 +60,7 @@ export default function BasicTextFields() {
             </option>
           ))}
         </TextField>
-      <TextField id="standard-basic" label="Comuna" />
+     
       <TextField id="standard-basic" label="Direccion" />
         <ButtonPrimary title='Crear Usuario'/>
         </div>
