@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import '../assets/css/welcome.css';
 import welcome from '../assets/img/welcome.svg'
 import ButtonPrimary from './ButtonPrimary';
@@ -15,7 +16,9 @@ const Welcome = () => {
             <div className='body-welcome'>
                 <p>Tu nueva <strong>cuenta digital GRATIS</strong> ¡Abrela en sólo tres minutos y maneja tu dinero como quieras desde tu celular!</p>
             </div>
-                <ButtonPrimary title='Crear Usuario'/>
+                <Link to="/registrarse">
+                    <ButtonPrimary title='Crear Usuario'/>
+                </Link>
                 <ButtonPrimary title='Iniciar Sesión' />
         </div>
     )
