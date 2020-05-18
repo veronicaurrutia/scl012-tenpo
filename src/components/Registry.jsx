@@ -59,7 +59,7 @@ const Registry = () => {
         </div>
       </form>
     </div>
-    <div style={{display:'flex', justifyContent:'center'}}>
+    <div className='container-button'>
      <ButtonPrimary title='Continuar'/>
     </div>
      </>

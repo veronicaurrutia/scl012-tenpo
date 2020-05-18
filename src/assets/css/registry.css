@@ -40,5 +40,10 @@
     right: 0px;
 
 }
+.container-button{
+    display: flex;
+    align-items: center;
+}
+
 
 
