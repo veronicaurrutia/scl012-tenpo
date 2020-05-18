@@ -5,6 +5,8 @@ import TextField from "@material-ui/core/TextField";
 import ButtonPrimary from './ButtonPrimary';
 import eye from '../assets/img/eye.svg';
 import mic from '../assets/img/mic.svg';
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,7 +62,10 @@ const Registry = () => {
       </form>
     </div>
     <div className='container-button'>
-     <ButtonPrimary title='Continuar'/>
+      <Link to="/verificacion">
+        <ButtonPrimary title='Continuar'/>
+      </Link>
+
     </div>
      </>
   );

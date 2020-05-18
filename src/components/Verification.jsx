@@ -4,24 +4,39 @@ import TextField from '@material-ui/core/TextField';
 import ButtonPrimary from '../components/ButtonPrimary';
 import '../assets/css/verification.css'
 import { Link } from 'react-router-dom';
+import mic from '../assets/img/mic.svg';
 
-const useStyles = makeStyles((theme) => ({
+
+const useStyle = makeStyles((theme) => ({
   root: {
-    '& > *': {
+    "& > *": {
       margin: theme.spacing(1),
-      width: '31ch',
     },
+
+    "& .MuiFormLabel-root": {
+      fontSize: '20px',
+    },
+    "& .MuiInputBase-input": {
+      padding: '10px',
+    },
+    "& .MuiFormControl-root": {
+      width: '19em',
+    }
+   
   },
 }));
 const Verification = () => {
-    const classes = useStyles();
+    const classes = useStyle();
     return (
       <div className="container-code">
         <h1 className='code-tittle'>Te hemos enviado un correo</h1>
         <p className='code-text'>Ingresa a continuación el código que te enviamos</p>
         <div >
           <form className={classes.root}  noValidate autoComplete="off">
-            <TextField  id="Codigo-basic" label="Codigo" />
+            <div className='container-img'>
+              <TextField  id="Codigo-basic" label="Codigo" />
+                <img src={mic}/>
+            </div>
           </form>
         </div>
        

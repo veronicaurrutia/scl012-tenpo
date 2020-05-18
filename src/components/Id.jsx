@@ -10,23 +10,23 @@ import Modal from '@material-ui/core/Modal';
 import adelante from '../assets/img/adelante.png'
 import detras from '../assets/img/detras.png'
 import '../assets/css/id.css';
+import mic from '../assets/img/mic.svg';
+
 
 const useStyle = makeStyles((theme) => ({
   root: {
     "& > *": {
       margin: theme.spacing(1.5),
-      width: "36ch",
-      left:"20px"
+      heigth:20,
     },
-    "& label.Mui-focused": {
-      color: "#175C54",
+    "& .MuiInputBase-input": {
+      padding: '15px',
     },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "#00BAA4",
+    "& .MuiFormControl-root": {
+      width: '19em',
+      left: 22,
     },
-   
-  },
-}));
+} }));
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -46,10 +46,11 @@ const useStyles = makeStyles(theme => ({
   paper: {
     width: 400,
     backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(6),
+    boxShadow: theme.shadows[3],
+    padding: theme.spacing(5),
     outline: 'none',
     position:"absolute",
+    right:20,
   },
 }));
 function SimpleModal() {
@@ -101,8 +102,12 @@ const Id = () => {
         </Modal>
       </div>
       <form className={classe.root} noValidate autoComplete="off">
-        <TextField id="standard-basic" label="RUT" />
-        <TextField id="standard-basic" label="Número de serie" />
+        <div className='container-img'>
+          <TextField id="standard-basic" label="RUT" />
+            <img src={mic}/>
+          <TextField id="standard-basic" label="Número de serie" />
+            <img src={mic}/>
+         </div>   
       </form>
       <a href className='id-modal' onClick={handleOpen}><strong>¿Donde encuentro el numero de serie?</strong></a>
       
@@ -119,13 +124,3 @@ const Id = () => {
 }
 
 export default Id
-
-{/* <div>
-        <div className='id-form'>
-
-        
-       
-        
-        </div>
-      </div>
-       */}
