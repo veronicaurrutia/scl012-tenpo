@@ -54,7 +54,7 @@ const ValidationWS = () => {
             <Link to='/validarWS'>
               <button className='enviar-codigo'>ENVIAR CODIGO DE NUEVO</button>
             </Link>
-            <Link to="/registrarse">
+            <Link to="/home">
                 <ButtonPrimary title='Continuar'/>
             </Link>
           </div>
