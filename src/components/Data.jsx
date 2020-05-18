@@ -217,7 +217,9 @@ por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
       <img src={mic}/>
       </div>
       <div className='container-button'>
+        <Link to="/phone">
      <ButtonPrimary title='Continuar'/>
+     </Link>
     </div>
         </div>
         </form>

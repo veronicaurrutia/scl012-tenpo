@@ -7,7 +7,8 @@ import Verification from './components/Verification.jsx';
 import Home from './components/Home.jsx';
 import Id from './components/Id.jsx';
 import Phone from './components/Phone';
-import Validacion from './components/ValidationSMS';
+import Mensaje from './components/ValidationSMS';
+import What from './components/ValidationWS';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -35,8 +36,11 @@ function App() {
           <Route path="/phone">
             <Phone/>
           </Route>
-          <Route path="/valida">
-            <Validacion/>
+          <Route path="/sms">
+            <Mensaje/>
+          </Route>
+          <Route path="/ws">
+            <What/>
           </Route>
         </Switch>  
     </Router>

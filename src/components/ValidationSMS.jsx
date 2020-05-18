@@ -41,7 +41,7 @@ const ValidationWS = () => {
     return (
         <>
         <div className='container-validationWS'>
-            <h1>Te hemos enviado un Whatsapp</h1>
+            <h1>Te hemos enviado un SMS</h1>
             <p>Ingresa a continuación el código que te enviamos.</p>
           <form className={classes.root} noValidate autoComplete="off">
               <div className='container-clave'>
