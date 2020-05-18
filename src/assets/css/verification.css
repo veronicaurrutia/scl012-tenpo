@@ -1,0 +1,57 @@
+.container-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.code-tittle{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 38px;
+    text-indent: 2px;
+    font-feature-settings: 'liga' off;
+    color: #175C54;
+    width: 315px;
+    height: 89px;
+}
+.code-text{
+    display: flex;
+    justify-content: center;
+    text-align:start ;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #175C54;
+    top: 167px;
+    width: 310px;
+    height: 92px;
+}
+.container-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.code-btn{
+    width: 312px;
+    height: 60px;
+    background: rgba(116, 116, 128, 0.08);
+    border-radius: 8px;
+    border-color:  #175C54;
+    font: Bold 20px/17px Gotham;
+    letter-spacing: 0.7px;
+    color:  #175C54;
+    margin-bottom: 25px;
+}
+
+.container-img{
+    top: 30px;
+    right: 0px;
+}
