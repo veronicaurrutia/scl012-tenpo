@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import ButtonPrimary from '../components/ButtonPrimary';
-import verification from '../assets/css/verification.css'
+import '../assets/css/verification.css'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,14 +17,19 @@ const Verification = () => {
     const classes = useStyles();
     return (
       <div className="container-code">
-        <h1 className='code-tittle'>Verificacion</h1>
-        <p className='code-text'>Te hemos enviado un correo, favor ingresar codigo de validacion</p>
+        <h1 className='code-tittle'>Te hemos enviado un correo</h1>
+        <p className='code-text'>Ingresa a continuación el código que te enviamos</p>
         <form className={classes.root} noValidate autoComplete="off">
           <TextField id="Codigo-basic" label="Codigo" />
         </form>
         <div className='container-btn'>
-            <ButtonPrimary   title='Ingresar'/>
-            <ButtonPrimary title='Crear Cuenta'/>
+          <ButtonPrimary   title='ENVIAR CÓDIGO DE NUEVO'/>
+          <Link to="/home">
+            <ButtonPrimary   title='CONOCER TENPO'/>
+          </Link>
+          <Link to="/id">
+            <ButtonPrimary title='CREAR CUENTA DIGITAL'/>
+          </Link>
         </div>
       </div>
     );

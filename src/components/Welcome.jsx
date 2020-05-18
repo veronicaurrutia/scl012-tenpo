@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/css/welcome.css';
 import welcome from '../assets/img/welcome.svg'
 import ButtonPrimary from './ButtonPrimary';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,8 +16,12 @@ const Welcome = () => {
             <div className='body-welcome'>
                 <p>Tu nueva <strong>cuenta digital GRATIS</strong> ¡Abrela en sólo tres minutos y maneja tu dinero como quieras desde tu celular!</p>
             </div>
+            <Link to="/registrarse" >
                 <ButtonPrimary title='Crear Usuario'/>
-                <ButtonPrimary title='Iniciar Sesión' />
+            </Link>
+        
+            <ButtonPrimary title='Iniciar Sesión' />
+           
         </div>
     )
 }

@@ -1,0 +1,24 @@
+.container-registry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-registry h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color:#008F7E;
+    
+}
+.container-registry p{
+    color: gray;
+    
+}
+.container-registry form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+    margin-top: 6em;
+}
+
