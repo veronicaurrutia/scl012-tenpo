@@ -1,0 +1,56 @@
+.container-id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.id-tittle{
+    width: 301px;
+    height: 49px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 38px;
+    text-indent: 2px;
+    font-feature-settings: 'liga' off;
+    color: #175C54;
+    padding: 15px;
+    margin-left: -22px;
+}
+.id-text{
+    width: 347px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #175C54;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.id-modal{
+    width: 320px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    text-decoration-line: underline;
+    color: #175C54;
+}
+.id-check{
+    width: 282px;
+    height: 66px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    text-decoration-line: underline;
+    color: #175C54;
+    margin-top: 35px;
+}
