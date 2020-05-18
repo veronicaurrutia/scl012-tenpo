@@ -37,7 +37,7 @@
 .container-btn{
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 12em;
 }
 .code-btn{
     width: 312px;
@@ -48,7 +48,7 @@
     font: Bold 20px/17px Gotham;
     letter-spacing: 0.7px;
     color:  #175C54;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .container-img{

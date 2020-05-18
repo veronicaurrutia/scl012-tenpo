@@ -44,7 +44,7 @@ function getModalStyle() {
   
 const useStyles = makeStyles(theme => ({
   paper: {
-    width: 400,
+    width: 313,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[3],
     padding: theme.spacing(5),
@@ -118,11 +118,10 @@ const Id = () => {
         label="Acepto conforme los terminos y condiciones del servicio."
         labelPlacement="end"
       />
-    <div className='container-btn'>
+        <div className='id-btn'>
           <Link to="/data">
-            <ButtonPrimary   title='CONTINUAR'/>
+            <ButtonPrimary title='CONTINUAR'/>
           </Link>
-         
         </div>
     </div>
   )

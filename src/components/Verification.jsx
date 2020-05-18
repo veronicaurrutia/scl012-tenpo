@@ -43,10 +43,10 @@ const Verification = () => {
         <div className='container-btn'>
           <button className='code-btn'>ENVIAR CÓDIGO DE NUEVO</button>
           <Link to="/home">
-            <ButtonPrimary   title='CONOCER TENPO'/>
+            <ButtonPrimary  title='CONOCER TENPO'/>
           </Link>
           <Link to="/id">
-            <ButtonPrimary  title='CREAR CUENTA DIGITAL'/>
+            <ButtonPrimary title='CREAR CUENTA DIGITAL'/>
           </Link>
         </div>
       </div>
