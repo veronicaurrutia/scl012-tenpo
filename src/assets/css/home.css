@@ -1,0 +1,64 @@
+.container-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-img{
+    width: 100%;
+}
+
+.img-home{
+    width: 400px;
+    margin-top: -118px;
+    margin-left: -54px;
+}
+.logo{
+    width: 14em;
+    position: absolute;
+    margin-left: -320px;
+    margin-top: 3em;
+}
+
+
+.text-home{
+    color: #175C54;
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 38px;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.body-home{
+    width: 300px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #175C54;
+    font-size: 22px;
+    line-height: 26px;
+}
+.body-home p{
+    width: 90%;
+    font-size: larger;
+    text-align: center;
+}
+.container-button-home{
+    display: flex;
+    flex-direction: column;
+    margin-top:2em;
+}
+.sigIn-btn{
+    width: 312px;
+    height: 60px;
+    background: rgba(116, 116, 128, 0.08);
+    border-radius: 8px;
+    border-color:  #175C54;
+    font: Bold 20px/17px Gotham;
+    letter-spacing: 0.7px;
+    color:  #175C54;
+    text-transform: uppercase;
+
+}
