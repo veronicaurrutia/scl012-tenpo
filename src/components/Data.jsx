@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import mic from '../assets/img/mic.svg';
-import Shape from '../assets/img/Shape.svg';
+
 
 const currencies = [
   {
@@ -164,11 +164,12 @@ export default function BasicTextFields() {
   };
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
-<div  className="container-data">
-<h1 >Datos personales</h1>
+    
+    <div className="container-data">
+      <h1 >Datos personales</h1>
 <p>Estamos regulados por la <strong>Comición para el mercado financiero</strong>,
 por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
+    <form className={classes.root} noValidate autoComplete="off">
      <div className="container-da">
       <TextField id="standard-basic" label="Ocupación" />
       <img src={mic}/>
@@ -178,7 +179,7 @@ por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
       <img src={mic}/>
       </div>
       <div className="container-da">
-          <TextField
+      <TextField
           id="standard-select-currency-native"
           select
           label="Comuna"
@@ -194,8 +195,8 @@ por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
             </option>
           ))}
         </TextField>
-       
         </div>
+        <div className="container-da">
         <TextField
           id="standard-select-currency-native"
           select
@@ -212,6 +213,7 @@ por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
             </option>
           ))}
         </TextField>
+        </div>
         <div className="container-da">
       <TextField id="standard-basic" label="Direccion" />
       <img src={mic}/>
@@ -221,7 +223,8 @@ por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
      <ButtonPrimary title='Continuar'/>
      </Link>
     </div>
-        </div>
+        
         </form>
+        </div>
   );
 }
