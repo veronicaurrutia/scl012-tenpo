@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Welcome from './components/Welcome.jsx';
+import Data from './components/Data';
 import Registry from './components/Registry.jsx';
 import Verification from './components/Verification.jsx';
 import Home from './components/Home.jsx';
@@ -28,7 +29,6 @@ function App() {
           </Route>
         </Switch>  
     </Router>
-
 
   );
 }
