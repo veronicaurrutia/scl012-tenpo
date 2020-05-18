@@ -13,3 +13,24 @@ form.makeStyles-root-1 {
     align-items: center;
 }
 
+.container-data{
+    font-style: normal;
+    font-weight: normal;
+    color: #175C54;
+    font-size: 22px;
+    line-height: 26px;
+    width: 320px;
+
+}
+
+
+.container-da{
+    position: relative;
+   
+ }
+ .container-da img {
+     position: absolute;
+     top: 30px;
+     right: 0px;
+ 
+ }
