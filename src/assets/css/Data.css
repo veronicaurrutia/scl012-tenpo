@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-form.makeStyles-root-1 {
+form.makeStyles-root-1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .container-data{
 
@@ -10,7 +15,6 @@ form.makeStyles-root-1 {
     flex-direction: column;
     font-family: Roboto;
 }
-
 .container-data p{
     font-style: normal;
     font-weight: normal;
@@ -48,3 +52,5 @@ form.makeStyles-root-1 {
 .data-button{
     margin-top: 4em;
 }
+
+
