@@ -6,6 +6,8 @@ import Registry from './components/Registry.jsx';
 import Verification from './components/Verification.jsx';
 import Home from './components/Home.jsx';
 import Id from './components/Id.jsx';
+import Phone from './components/Phone';
+import Validacion from './components/Validation';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -26,6 +28,15 @@ function App() {
           </Route>
           <Route path="/id">
             <Id/>
+          </Route>
+          <Route path="/data">
+            <Data/>
+          </Route>
+          <Route path="/phone">
+            <Phone/>
+          </Route>
+          <Route path="/valida">
+            <Validacion/>
           </Route>
         </Switch>  
     </Router>

@@ -4,7 +4,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import ButtonPrimary from './ButtonPrimary';
 import TextField from '@material-ui/core/TextField';
-import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import adelante from '../assets/img/adelante.png'
@@ -118,7 +118,12 @@ const Id = () => {
         label="Acepto conforme los terminos y condiciones del servicio."
         labelPlacement="end"
       />
-      <ButtonPrimary  title='CONTINUAR'/>
+    <div className='container-btn'>
+          <Link to="/data">
+            <ButtonPrimary   title='CONTINUAR'/>
+          </Link>
+         
+        </div>
     </div>
   )
 }

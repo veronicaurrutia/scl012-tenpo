@@ -20,6 +20,10 @@ form.makeStyles-root-1 {
     font-size: 22px;
     line-height: 26px;
     width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -30,7 +34,7 @@ form.makeStyles-root-1 {
  }
  .container-da img {
      position: absolute;
-     top: 30px;
+     top: 10px;
      right: 0px;
  
  }
