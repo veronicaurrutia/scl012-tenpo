@@ -1,0 +1,43 @@
+.container-validationWS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Roboto;
+}
+
+.container-validationWS h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #175C54;
+    font-weight: 500;
+    width: 320px;    
+}
+
+.container-validationWS p {
+    font-style: normal;
+    font-weight: normal;
+    color: #175C54;
+    font-size: 22px;
+    line-height: 26px;
+    width: 320px;
+    margin-bottom: 5em;
+}
+.validation-buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13em;
+}
+
+.enviar-codigo{
+    width: 312px;
+    height: 60px;
+    background: rgba(116, 116, 128, 0.08);
+    border-radius: 8px;
+    border-color:  #175C54;
+    font: Bold 20px/17px Gotham;
+    letter-spacing: 0.7px;
+    color:  #175C54;
+    margin-bottom: 15px;
+}

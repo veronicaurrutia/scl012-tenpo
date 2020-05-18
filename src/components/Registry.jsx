@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Registry = () => {
   const classes = useStyles();
+  
   return (
     <>
     <div className="container-registry">
