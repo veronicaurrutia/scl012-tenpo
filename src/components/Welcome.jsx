@@ -23,14 +23,8 @@ const Welcome = () => {
                 <Link to="/registrarse">
                     <ButtonPrimary title='Crear Usuario'/>
                 </Link>
-<<<<<<< HEAD
-                <Link to="/data">
-                <ButtonPrimary title='Iniciar Sesión' />
-                </Link>
-=======
                 <button className='sigIn-btn'>Iniciar Sesión</button>
             </div>
->>>>>>> 7d1f73d675db4742dba5bb33640123af7492c81b
         </div>
     )
 }
