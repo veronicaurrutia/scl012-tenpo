@@ -144,6 +144,13 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       width: '25ch',
     },
+    "& label.Mui-focused": {
+      color: "#175C54",
+    },
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "#175C54",
+    },
+    
   },
 }));
 
@@ -159,6 +166,8 @@ export default function BasicTextFields() {
     <form className={classes.root} noValidate autoComplete="off">
 <div>
 <h1 className='text-Valida'>Datos personales</h1>
+<p>Estamos regulados por la Comición para el mercado financiero,
+por lo que necesitamos algunos datos extra para abrir la cuenta virtual</p>
       <TextField id="standard-basic" label="Ocupación" />
       <TextField id="standard-basic" label="Nacionalidad" />
       <TextField id="standard-basic" label="Region" />
@@ -194,9 +203,9 @@ export default function BasicTextFields() {
         </TextField>
      
       <TextField id="standard-basic" label="Direccion" />
-        <Link to="/validation">
-        <ButtonPrimary title='Crear Usuario'/>
-        </Link>
+      <div className='container-button'>
+     <ButtonPrimary title='Continuar'/>
+    </div>
         </div>
         </form>
   );

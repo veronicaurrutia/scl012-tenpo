@@ -9,7 +9,9 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       width: '25ch',
+      color: "#175C54",
     },
+  
   },
 }));
 const Verification = () => {
