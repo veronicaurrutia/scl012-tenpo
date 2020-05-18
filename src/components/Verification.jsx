@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '25ch',
+      width: '31ch',
     },
   },
 }));
@@ -19,16 +19,19 @@ const Verification = () => {
       <div className="container-code">
         <h1 className='code-tittle'>Te hemos enviado un correo</h1>
         <p className='code-text'>Ingresa a continuación el código que te enviamos</p>
-        <form className={classes.root} noValidate autoComplete="off">
-          <TextField id="Codigo-basic" label="Codigo" />
-        </form>
+        <div >
+          <form className={classes.root}  noValidate autoComplete="off">
+            <TextField  id="Codigo-basic" label="Codigo" />
+          </form>
+        </div>
+       
         <div className='container-btn'>
-          <ButtonPrimary   title='ENVIAR CÓDIGO DE NUEVO'/>
+          <button className='code-btn'>ENVIAR CÓDIGO DE NUEVO</button>
           <Link to="/home">
             <ButtonPrimary   title='CONOCER TENPO'/>
           </Link>
           <Link to="/id">
-            <ButtonPrimary title='CREAR CUENTA DIGITAL'/>
+            <ButtonPrimary  title='CREAR CUENTA DIGITAL'/>
           </Link>
         </div>
       </div>

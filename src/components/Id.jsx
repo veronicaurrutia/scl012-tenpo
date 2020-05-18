@@ -9,48 +9,61 @@ import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import adelante from '../assets/img/adelante.png'
 import detras from '../assets/img/detras.png'
+import '../assets/css/id.css';
 
-
+const useStyle = makeStyles((theme) => ({
+  root: {
+    "& > *": {
+      margin: theme.spacing(1.5),
+      width: "36ch",
+      left:"20px"
+    },
+    "& label.Mui-focused": {
+      color: "#175C54",
+    },
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "#00BAA4",
+    },
+   
+  },
+}));
 
 function rand() {
-    return Math.round(Math.random() * 20) - 10;
+  return Math.round(Math.random() * 20) - 10;
 }
 
 function getModalStyle() {
-    const top = 50 + rand();
-    const left = 50 + rand();
-  
-    return {
-      top: `${top}%`,
-      left: `${left}%`,
-      transform: `translate(-${top}%, -${left}%)`,
-    };
+  const top = 50 + rand();
+  const left = 50 + rand();
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+  };
 }
   
 const useStyles = makeStyles(theme => ({
-    paper: {
-      position: 'absolute',
-      width: 400,
-      backgroundColor: theme.palette.background.paper,
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(4),
-      outline: 'none',
-    },
+  paper: {
+    width: 400,
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(6),
+    outline: 'none',
+    position:"absolute",
+  },
 }));
 function SimpleModal() {
-    const [open, setOpen] = React.useState(false);
-    // getModalStyle is not a pure function, we roll the style only on the first render
-    const [modalStyle] = React.useState(getModalStyle);
-    const classes = useStyles();
-    return (
+  const [open, setOpen] = React.useState(false);
+  // getModalStyle is not a pure function, we roll the style only on the first render
+  const [modalStyle] = React.useState(getModalStyle);
+  const classes = useStyles();
+  return (
+    <div >
+      <img src={adelante}/>
+      <img src={detras}/>
+    </div>
       
-      <div >
-        <img src={adelante}/>
-        <img src={detras}/>
-
-      </div>
-      
-    );
+  );
 }
 const Id = () => {
     const [open, setOpen] = React.useState(false);
@@ -65,54 +78,54 @@ const Id = () => {
     setOpen(false);
   };
   const classes = useStyles();
+  const classe = useStyle();
 
-  const [state, setState] = React.useState({
-    acepto: true,
-  });
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
-  };
-  const { acepto} = state;
-    return (
-        <div>
-            <h1>Rut y N° Documento</h1>
-            <p>ingresa tu rut y n° Documento</p>
-            <div>
-      <Button onClick={handleOpen}>¿Donde lo encuentro?</Button>
-      <Modal
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
-        open={open}
-        onClose={handleClose}
-      >
-        <div style={modalStyle} className={classes.paper}>
-          <Typography variant="h6" id="modal-title">
-         geral
-          </Typography>
-          <Typography variant="subtitle1" id="simple-modal-description">
-            sdsd
-          </Typography>
-          <SimpleModal />
-        </div>
-      </Modal>
-    </div>
-            <div>
-            <form className={classes.root} noValidate autoComplete="off">
-                <TextField id="Rut-basic" label="Rut" />
-                <TextField id="Documento-basic" label="N° Documento" />
-            </form>
-          <div className={classes.root}>
-              <FormControlLabel
-                  control={<Checkbox checked={acepto} onChange={handleChange('acepto')} value="acepto" />}
-                  label="Acepto condiciones"
-              />  
+  return (
+    <div className='container-id'>
+      <h1 className='id-tittle'>Cédula de identidad</h1>
+      <p className='id-text'>Con esta cuenta podrás cargar dinero, recargar o pagar a tus amigos.</p>
+      <p className='id-text'>
+        <strong>
+          Para poder abrir esta cuenta necesitas tu RUT y el número de serie de tu cedula
+          de identidad
+        </strong>
+      </p>
+      <div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+        >
+          <div style={modalStyle} className={classes.paper}>
+            <SimpleModal />
           </div>
-          <ButtonPrimary title='Crear Cuenta'/>
+        </Modal>
       </div>
-
-        </div>
-    )
+      <form className={classe.root} noValidate autoComplete="off">
+        <TextField id="standard-basic" label="RUT" />
+        <TextField id="standard-basic" label="Número de serie" />
+      </form>
+      <a href className='id-modal' onClick={handleOpen}><strong>¿Donde encuentro el numero de serie?</strong></a>
+      
+      <FormControlLabel
+        className='id-check'
+        value="end"
+        control={<Checkbox color="primary" />}
+        label="Acepto conforme los terminos y condiciones del servicio."
+        labelPlacement="end"
+      />
+      <ButtonPrimary  title='CONTINUAR'/>
+    </div>
+  )
 }
 
 export default Id
 
+{/* <div>
+        <div className='id-form'>
+
+        
+       
+        
+        </div>
+      </div>
+       */}
