@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
       "& > *": {
         margin: theme.spacing(1),
-        
       },
       "& label.Mui-focused": {
         color: "#175C54",
