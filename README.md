@@ -1,4 +1,4 @@
-# ![logo](./src/assets/img/logo.svg)
+![logo](./src/assets/img/logo.svg)
 
 ## Descripción del producto📎
 
