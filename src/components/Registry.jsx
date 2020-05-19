@@ -45,7 +45,7 @@ const Registry = () => {
      
       <form className={classes.root} noValidate autoComplete="off">
         <div className='container-clave'>
-          <TextField id="standard-basic" label="Nombre" />
+          <TextField  id="standard-basic" label="Nombre" />
           <img src={mic}/>
         </div>
         <div className='container-clave'>
