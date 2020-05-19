@@ -11,8 +11,8 @@ const Welcome = () => {
     return (
         <div className='container-welcome'>
             <div className='container-img'>
-                <img className='img-welcome' src={welcome}/>
-                <img className='logo' style={{width:'15em'}} src={logo}/>
+                <img alt='bienvenido' className='img-welcome' src={welcome}/>
+                <img alt='logo' className='logo' style={{width:'15em'}} src={logo}/>
             </div>
             <h1 className='text-welcome'>¡Hola!</h1>
             <div>
